@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="stylesheet" type="text/css" href="input.css">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow " />
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" ><img src="tick.png" width="25px" height="25px" /> MeraList</a>
+<style >
+  .button {
+  background-color: transparent;
+  border: none;
+  
+}
+</style>
+
+
+
+</head>
+
+<body>
+  <input class="form-control form-control-dark w-100" type="text" placeholder=" &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Quick Search" aria-label="Search"><h6>&nbsp &nbsp &nbsp</h6>
+   <button class="button" onclick="onClick()"><img src="cross.png" width="25px" height="25px" /></button><h6> &nbsp &nbsp</h6>
+   <img src="bell.png" width="40px" height="25px"><h6>&nbsp &nbsp &nbsp</h6>
+   <img src="settings.png" width="25px" height="25px">
+  <!--<ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>-->
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+      	  <table class="table table-striped table-sm" class="nav flex-column mb-2">
+          <thead>
+         <tr>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span><th style="text-align:center" bgcolor="#FFE5B4" >THINGS-TO-DO
+        </th></span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+       </tr>
+           </thead>
+
+          <tbody>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="try.html">
+   
+              Today<img src="cross.png" width="18px" height="18px" align="right" /><span class="sr-only">(current)</span>
+            </a>
+          </th>
+        </tr>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="week.html">
+              <span data-feather="file-text"></span>
+              This Week<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="month.html">
+              <span data-feather="file-text"></span>
+              This Months<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+        </tbody>
+        </table>
+        <table class="table table-striped table-sm" class="nav flex-column mb-2">
+          <thead>
+         <tr>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span><th style="text-align:center" bgcolor="#FFE5B4">OTHERS</th></span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+       </tr>
+           </thead>
+
+          <tbody>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="books.html">
+              <span data-feather="file-text"></span>
+              Books-to-Read<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+        </tr>
+          <tr>
+          <th style="text-align:center"scope="row" class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Courses-to-Complete<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+          <tr>
+          <th style="text-align:center"scope="row" class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Goals-to-Achieve<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+        </tbody>
+        </table>
+
+        
+        <table class="table table-striped table-sm" class="nav flex-column mb-2">
+          <thead>
+         <tr>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span><th style="text-align:center" bgcolor="#FFE5B4" >MANAGER</th></span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+         </tr>
+           </thead>
+
+          <tbody>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Passwords<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+        </tr>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Meetings<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+          <tr>
+          <th style="text-align:center" scope="row" class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Tickets<img src="cross.png" width="18px" height="18px" align="right" />
+            </a>
+          </th>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </nav>
+
+    
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!--<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">-->
+
+        <div id="myDIV" class="header">
+  
+  <center><input type="text" id="myInput" placeholder=" What's in Your Mind for this Week!"></center>
+  <span onclick="newElement()" class="addBtn">Stack Up</span>
+</div>
+
+<ul id="myUL">
+ 
+</ul>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script type="dashboard.js"></script>
+  </body>
+</html>
